@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="I photograph street cats in Cyprus. You buy their food. It's capitalism meets comedy meets cat content. Join the Patreon."
+    />
+    <meta
+      name="keywords"
+      content="street photography Cyprus, cat photography, Patreon creator, cat content, street cats"
+    />
+    <meta
+      property="og:title"
+      content="Can You Feed a Cat? - Street Cat Photography Project"
+    />
+    <meta
+      property="og:description"
+      content="I photograph street cats in Cyprus. You buy their food. Simple."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://canyoufeedacat.com" />
+    <title>Can You Feed a Cat? | Street Cat Photography Project</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --black: #0a0a0a;
+        --white: #fafafa;
+        --gray: #808080;
+        --accent: #ff3333;
+        --accent-hover: #cc0000;
+      }
+
+      .hero-image {
+        max-height: 200px;
+        width: auto;
+        margin-bottom: 2rem;
+      }
+
+      * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        font-family: "Space Grotesk", sans-serif;
+        color: var(--black);
+        background: var(--white);
+        line-height: 1.6;
+      }
+
+      .mono {
+        font-family: "IBM Plex Mono", monospace;
+      }
+
+      .hero {
+        min-height: 100vh;
+        border-bottom: 2px solid var(--black);
+      }
+
+      .hero-title {
+        font-size: clamp(2.5rem, 8vw, 6rem);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+      }
+
+      .btn-primary {
+        background: var(--accent);
+        border: 2px solid var(--black);
+        color: var(--white);
+        font-weight: 600;
+        padding: 1rem 2.5rem;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        transition: all 0.2s ease;
+        box-shadow: 4px 4px 0 var(--black);
+      }
+
+      .btn-primary:hover {
+        background: var(--accent-hover);
+        transform: translate(2px, 2px);
+        box-shadow: 2px 2px 0 var(--black);
+        color: var(--white);
+      }
+
+      .btn-outline {
+        background: transparent;
+        border: 2px solid var(--black);
+        color: var(--black);
+        font-weight: 600;
+        padding: 1rem 2.5rem;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        transition: all 0.2s ease;
+      }
+
+      .btn-outline:hover {
+        background: var(--black);
+        color: var(--white);
+      }
+
+      .section-border {
+        border-top: 2px solid var(--black);
+        border-bottom: 2px solid var(--black);
+      }
+
+      .card-brutalist {
+        border: 2px solid var(--black);
+        background: var(--white);
+        transition: transform 0.2s ease;
+      }
+
+      .card-brutalist:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 4px 4px 0 var(--black);
+      }
+
+      .stat-box {
+        border: 2px solid var(--black);
+        background: var(--white);
+        padding: 1.5rem;
+      }
+
+      .quote-mark {
+        font-size: 4rem;
+        line-height: 1;
+        color: var(--accent);
+        font-family: "IBM Plex Mono", monospace;
+      }
+
+      .social-link {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border: 2px solid var(--black);
+        background: var(--white);
+        color: var(--black);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.2s ease;
+      }
+
+      .social-link:hover {
+        background: var(--black);
+        color: var(--white);
+      }
+
+      .bg-accent {
+        background: var(--accent);
+      }
+
+      .text-accent {
+        color: var(--accent);
+      }
+
+      footer {
+        border-top: 2px solid var(--black);
+      }
+
+      .number-circle {
+        width: 60px;
+        height: 60px;
+        border: 2px solid var(--black);
+        background: var(--white);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="text-center mb-5">
+              <h1 class="hero-title mb-4">Can You Feed a Cat?</h1>
+              <p class="lead fs-3 mb-5 text-muted">
+                I walk. I photograph street cats. You buy their food.
+                <br />I feed them. You get photos. And unlimited cat gratitude.
+                <br />That's the deal.
+              </p>
+            </div>
+
+            <div
+              class="d-flex flex-column flex-md-row gap-3 justify-content-center mb-5"
+            >
+              <a
+                href="https://patreon.com/canyoufeedacat"
+                rel="noopener"
+                class="btn btn-primary"
+              >
+                Support on Patreon
+              </a>
+              <a href="#concept" class="btn btn-outline"> Tell me more </a>
+            </div>
+
+            <div class="row g-3 mt-5">
+              <div class="col-md-4">
+                <div class="stat-box text-center">
+                  <div class="mono fs-1 fw-bold mb-2">5+</div>
+                  <div class="text-uppercase" style="font-size: 0.875rem">
+                    Cats Photographed
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="stat-box text-center">
+                  <div class="mono fs-1 fw-bold mb-2">Daily</div>
+                  <div class="text-uppercase" style="font-size: 0.875rem">
+                    New Content
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="stat-box text-center">
+                  <div class="mono fs-1 fw-bold mb-2">100%</div>
+                  <div class="text-uppercase" style="font-size: 0.875rem">
+                    Real Cats, Not Generated By Some Nerd
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="concept" class="py-5 section-border">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="display-4 fw-bold mb-5 text-center">THE CONCEPT</h2>
+
+            <div class="text-center mb-5">
+              <img
+                src="/images/the-concept.jpg"
+                alt="A street cat in Cyprus being photographed"
+                class="img-fluid hero-image mx-auto d-block"
+                style="max-height: 90vh; width: auto"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <p
+              class="text-center text-muted fs-6 mb-5 mono"
+              style="font-size: 0.875rem"
+            >
+              (I found this cute little guy
+              <a href="https://www.google.com/maps?q=34.7714283,32.4055783"
+                >here</a
+              >.)
+            </p>
+
+            <div class="fs-4 mb-4">
+              <p>
+                This is an art project disguised as capitalism disguised as cat
+                content.
+              </p>
+              <p>
+                Or maybe it's cat content disguised as capitalism disguised as
+                art.
+              </p>
+              <p class="mb-0">
+                Either way:
+                <strong
+                  >I photograph street cats in Cyprus. You subscribe on Patreon.
+                  Your money buys food for those cats and an opportunity for me
+                  to do photography full time.</strong
+                >
+              </p>
+            </div>
+
+            <div class="mt-5 p-4 bg-light border-start border-5 border-dark">
+              <p class="mono fs-5 mb-0 fst-italic">
+                "It's like a subscription box, except instead of getting socks
+                you get the satisfaction of knowing a cat ate today because of
+                you. Also you get cool photos."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="py-5 bg-light">
+      <div class="container py-5">
+        <h2 class="display-4 fw-bold mb-5 text-center">HOW IT WORKS</h2>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card-brutalist p-4 h-100">
+              <div class="number-circle mb-4 mx-auto">1</div>
+              <h3 class="h4 fw-bold mb-3 text-center">I WALK & SHOOT</h3>
+              <p class="text-center fs-5 mb-5">
+                I walk around Cyprus with my camera. I find cats on the streets.
+                I feed and photograph them. Sometimes they're photogenic.
+                Sometimes they're not. I feed them anyway.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card-brutalist p-4 h-100">
+              <div class="number-circle mb-4 mx-auto">2</div>
+              <h3 class="h4 fw-bold mb-3 text-center">YOU PAY</h3>
+              <p class="text-center fs-5 mb-5">
+                You join my Patreon. Choose your tier. Your subscription buys
+                cat food. Not metaphorical cat food. Actual cat food. From an
+                actual store.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card-brutalist p-4 h-100">
+              <div class="number-circle mb-4 mx-auto">3</div>
+              <h3 class="h4 fw-bold mb-3 text-center">EVERYONE WINS</h3>
+              <p class="text-center fs-5 mb-5">
+                You get exclusive photos & videos. The cats get fed. I get to
+                keep wandering around with a camera. It's a tiny economy that
+                somehow makes sense.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 section-border">
+      <div class="container py-5">
+        <h2 class="display-4 fw-bold mb-5 text-center">WHAT YOU GET</h2>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-4 border-2 border-dark border-start">
+              <h3 class="h3 fw-bold mb-3">→ Exclusive Content</h3>
+              <p class="fs-5 mb-0">
+                Photos and videos you won't see on Instagram. Because Instagram
+                doesn't pay for cat food. You do.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="p-4 border-2 border-dark border-start">
+              <h3 class="h3 fw-bold mb-3">→ Behind the Scenes</h3>
+              <p class="fs-5 mb-0">
+                Stories about the cats. Where I found them. What they were
+                doing. Whether they liked me or not (mostly not, unless I
+                brought food).
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="p-4 border-2 border-dark border-start">
+              <h3 class="h3 fw-bold mb-3">→ Direct Impact</h3>
+              <p class="fs-5 mb-0">
+                You see the cat in the photo. Your money bought food for that
+                specific cat. And it is you, who fed him that day.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="p-4 border-2 border-dark border-start">
+              <h3 class="h3 fw-bold mb-3">→ Community Access</h3>
+              <p class="fs-5 mb-0">
+                Join other people who also think paying to see photos of cats
+                they're feeding is a reasonable transaction.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a
+            href="https://patreon.com/canyoufeedacat"
+            rel="noopener"
+            class="btn btn-primary btn-lg"
+          >
+            Join the Patreon
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container py-5">
+        <h2 class="display-4 fw-bold mb-5 text-center">TESTIMONIALS*</h2>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card-brutalist p-4 h-100">
+              <div class="quote-mark mb-3">"</div>
+              <p class="fs-5 mb-5">
+                This is either the dumbest or smartest thing I've ever
+                subscribed to. The cats are cute though.
+              </p>
+              <p class="mono fs-6 mb-0 fst-italic" style="font-size: 0.875rem">
+                — Anonymous Patron
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card-brutalist p-4 h-100">
+              <div class="quote-mark mb-3">"</div>
+              <p class="fs-5 mb-5">
+                I like knowing exactly where my money goes. Into a cat's mouth.
+                Via cat food. That I bought. Through Patreon.
+              </p>
+              <p class="mono fs-6 mb-0 fst-italic" style="font-size: 0.875rem">
+                — Cat Enabler
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card-brutalist p-4 h-100">
+              <div class="quote-mark mb-3">"</div>
+              <p class="fs-5 mb-5">
+                Better than therapy and cheaper than a cat of my own. 10/10
+                would feed street cats through the internet again.
+              </p>
+              <p class="mono fs-6 mb-0 fst-italic" style="font-size: 0.875rem">
+                — Definitely Not My Mom
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p
+          class="text-center text-muted fs-5 mt-5 mono"
+          style="font-size: 0.875rem"
+        >
+          *These might be real. They might not be. Does it matter? The cats are
+          real.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-5 bg-accent text-white">
+      <div class="container py-5 text-center">
+        <h2 class="display-3 fw-bold mb-4">READY?</h2>
+        <p class="fs-4 mb-5 mx-auto" style="max-width: 600px">
+          Join the weird little economy where you trade money for cat photos and
+          cats get food.
+        </p>
+        <a
+          href="https://patreon.com/canyoufeedacat"
+          rel="noopener"
+          class="btn btn-primary btn-lg bg-black border-white text-white"
+        >
+          Support on Patreon
+        </a>
+        <p class="mt-4 mb-0 fs-6 mono" style="font-size: 0.875rem">
+          Cancel anytime. The cats won't judge you. I might.
+        </p>
+      </div>
+    </section>
+
+    <footer class="bg-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h3 class="fw-bold mb-4 mono">CANYOUFEEDACAT.COM</h3>
+            <p class="mb-4">
+              A street photography project where the subjects get fed and you
+              get content. Everyone wins except traditional art world
+              gatekeepers.
+            </p>
+            <a
+              href="mailto:hello@canyoufeedacat.com"
+              class="text-dark text-decoration-none mono"
+            >
+              → hello@canyoufeedacat.com
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <h4 class="fw-bold mb-4">FOLLOW THE PROJECT</h4>
+            <div class="d-flex flex-column gap-3">
+              <a
+                href="https://instagram.com/canyoufeedacat"
+                rel="noopener"
+                class="social-link"
+              >
+                Instagram →
+              </a>
+              <a
+                href="https://tiktok.com/@canyoufeedacat"
+                rel="noopener"
+                class="social-link"
+              >
+                TikTok →
+              </a>
+              <a
+                href="https://threads.net/@canyoufeedacat"
+                rel="noopener"
+                class="social-link"
+              >
+                Threads →
+              </a>
+              <a
+                href="https://x.com/canyoufeedacat"
+                rel="noopener"
+                class="social-link"
+              >
+                X.com →
+              </a>
+              <a
+                href="https://patreon.com/canyoufeedacat"
+                rel="noopener"
+                class="social-link bg-accent text-white border-black"
+              >
+                Patreon →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-5 border-dark" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-0 mono" style="font-size: 0.875rem">
+              © 2025 Can You Feed a Cat
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0 mono" style="font-size: 0.875rem">
+              Made in Cyprus. Consumed globally.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Can You Feed a Cat",
+        "creator": {
+          "@type": "Person",
+          "name": "Can You Feed a Cat"
+        },
+        "url": "https://canyoufeedacat.com",
+        "description": "Street cat photography project in Cyprus where Patreon members buy food for the cats in the photos",
+        "genre": "Photography, Social Art Project",
+        "sameAs": [
+          "https://instagram.com/canyoufeedacat",
+          "https://tiktok.com/@canyoufeedacat",
+          "https://threads.net/@canyoufeedacat",
+          "https://x.com/canyoufeedacat",
+          "https://patreon.com/canyoufeedacat"
+        ],
+        "email": "hello@canyoufeedacat.com"
+      }
+    </script>
+  </body>
+</html>
